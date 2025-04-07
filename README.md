@@ -2,7 +2,7 @@
 
 ## 📝 Introduction 
 
-The **BellaBeat Case Study** is a capstone project for the **Google Data Analytics Professional Certificate** on Coursera. In this case study, I will perform various real-world tasks of a junior data analyst at a fictional company called Cyclistic. Ask, prepare, process, analyze, share, and act are the stages of the data analysis process that I will use to solve the key business problems.
+The **BellaBeat Case Study** is a capstone project for the **Google Data Analytics Professional Certificate** on Coursera. In this case study, I will perform various real-world tasks of a junior data analyst at a fictional company called Bella Beat. Ask, prepare, process, analyze, share, and act are the stages of the data analysis process that I will use to solve the key business problems.
 
 ## 💬 Background
 
@@ -52,15 +52,18 @@ This Kaggle dataset includes fitness tracking data from 30 Fitbit users who agre
 
 ### 3. Process
 The basis for this analysis is **2016** data and the steps for processing the data are as follow:
-![Data Combining]()
 
-![Data Exploration]()
+![Data Modeling](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/DataModelingBellaBeat.sql)
 
-![Data Cleaning]()
+![Data Transformation](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/DataTransformationBellaBeat.sql)
 
-![Data Analysis]()
+![Data Combining](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/DataCombiningBellaBeat.sql)
 
-### 4. Data Combining
+![Data Exploration](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/DataExplorationBellaBeat.sql)
+
+![Data Analysis](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/Data%20Analysis.sql)
+
+#### Data Combining
 
 After exporting 6 tables to PostgreSQL, the next step involved merged the tables hourly_calories, hourly_intensities, and hourly_steps to consolidate relevant metrics such as calories consumed, total intensity, average intensity, and step counts into a unified structure.
 
@@ -76,16 +79,13 @@ A review of all six tables confirmed the absence of null values and duplicate re
 
 ### 4. Analyze
 
-Data Analysis
-The analysis question is
+The analysis question is:
 
 How could these trends help influence Bellabeat marketing strategy?
 
 To streamline the analysis and maintain consistency, the data tables—which track various fitness metrics like steps, calories, distance, sleep, and activity—will be categorized based on their time intervals (daily or hourly). Since all tables share the "Id" column as a common identifier, this grouping allows for easier pattern recognition and conclusions. By organizing the data this way, the analysis becomes more structured and manageable.
 
-![Pie Chart Time Spent in a day]()
-
-key insights:
+![Pie Chart Time Spent in a day](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/pie%20chart.png)
 
 Key Insights:
 
@@ -93,7 +93,7 @@ Key Insights:
 * Light Activity is Modest (22.29%)
 * Very Low Active Time (2.58% Very Active, 1.84% Fairly Active)
 
-![Total Distance and Average Calories Burned by Day of week]()
+![Total Distance and Average Calories Burned by Day of week](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/Total%20Distance.png)
 
 Key Insights:
 
@@ -102,7 +102,7 @@ Key Insights:
 * Tuesday accounted for 17.18% of Total Distance.
 * Total Calories and Total Distance diverged the most when the day_of_week was Tuesday, when Total Calories were 714455 higher than Total Distance.
 
-![Average Distance and Average Calories Burned by Day of week]()
+![Average Distance and Average Calories Burned by Day of week](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/average%20distance.png)
 
 key insights:
 
@@ -111,8 +111,8 @@ key insights:
 * Saturday accounted for 15.26% of Average Distance.
 * Average Calories Burned and Average Distance diverged the most when the Day of Week was Tuesday, when Average Calories Burned were 2,350.18 higher than Average Distance.
 
-![Table]()
-![Scarter plot 3 together]()
+![Table](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/Screenshot%202025-04-07%20at%2009.56.48.png)
+![Scarter plot 3 together](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/3%20scarter%20plot.png)
 
 Key insights:
 
@@ -122,23 +122,22 @@ Key insights:
 
 As activity intensity and duration increase, the R-squared values rise, showing a clear trend: more vigorous and prolonged exercise leads to greater calorie expenditure. This suggests that focusing on high-intensity workouts is far more effective for burning calories compared to low or moderate activity.
 
-![column chart calories burned vc time of day]()
+![column chart calories burned vc time of day](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/column%20chart.png)
 
 Key insights:
 
 * The data suggests a strong link between activity intensity and calories burned, with higher-intensity movement likely contributing significantly to energy expenditure.
 * Additionally, the graph indicates that peak activity periods occur between 7:00 AM and 8:00 PM, aligning with typical waking hours when users are most engaged in physical 
 
-![table charts]()
-![table charts]()
-![scarter chart]()
+![table charts](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/table.png)
+![scarter chart](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/table%20and%20scarter%20chart.png)
 
 Key Findings:
 
 * The analysis reveals a strong positive correlation (R² = 0.8727) between sleep duration and calories burned, indicating that longer, high-quality sleep is linked to greater calorie expenditure.
 * However, the relationship is not linear indefinitely—exceeding optimal sleep duration does not increase calorie burn and may instead reduce it. This suggests that while adequate sleep supports metabolism, excessive sleep could have diminishing returns or even negative effects on energy expenditure.
 
-![table and scarter chart]()
+![table and scarter chart](https://github.com/Juliana-89/Bellabeat-Case-Study-SQL-and-Power-BI/blob/main/table%20and%20scarter%20plot.png)
 
 Key insights:
 
